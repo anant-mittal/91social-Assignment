@@ -4,7 +4,6 @@
 package com.benchire.priceengine.service;
 
 import com.benchire.priceengine.dao.WheelDAO;
-import com.benchire.priceengine.enums.Spoke;
 import com.benchire.priceengine.model.Wheel;
 
 /**

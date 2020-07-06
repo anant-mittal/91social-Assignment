@@ -3,9 +3,7 @@
  */
 package com.benchire.priceengine.service;
 
-import com.benchire.priceengine.dao.FrameDAO;
 import com.benchire.priceengine.dao.SeatDAO;
-import com.benchire.priceengine.model.Frame;
 import com.benchire.priceengine.model.Seat;
 
 /**
