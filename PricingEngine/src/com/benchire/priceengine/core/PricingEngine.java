@@ -55,7 +55,6 @@ public class PricingEngine {
 					e.printStackTrace();
 				}
 
-				System.out.println(jsonObj);
 
 			} catch (JSONException e) {
 				e.printStackTrace();

@@ -30,10 +30,8 @@ public class ChainAssemblyService {
 
 	public void calculatePrice() {
 		double sizePrice = chainAssemblyDAO.getChainSizePrice(chainAssembly.getChainSize(), date);
-		System.out.println(" chain size type price : " + sizePrice);
 
 		double speedPrice = chainAssemblyDAO.getChainSpeedPrice(chainAssembly.getSpeed(), date);
-		System.out.println(" chain type price : " + speedPrice);
 
 		double totalPrice = sizePrice + speedPrice;
 		chainAssembly.setPrice(totalPrice);

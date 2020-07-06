@@ -53,7 +53,7 @@ public class PriceCalculator implements Callable<Bicycle> {
 		SeatService seatService = new SeatService(epochDate, bicycle.getSeat());
 		seatService.calculatePrice();
 
-		bicycle.getPrice();
+		bicycle.calculatePrice();
 		
 		return bicycle;
 	}

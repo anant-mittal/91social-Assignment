@@ -30,7 +30,6 @@ public class SeatService {
 
 	public void calculatePrice() {
 		double price = seatDAO.getSeatPrice(seat.getType(), date);
-		System.out.println(" seat type price : " + price);
 		double totalPrice = price;
 		seat.setPrice(totalPrice);
 	}

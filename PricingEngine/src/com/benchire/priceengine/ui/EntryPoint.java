@@ -51,7 +51,7 @@ public class EntryPoint {
 		PricingEngine priceEngine = new PricingEngine(enquiry);
 		priceEngine.calculatePrice();
 
-		System.out.println(result);
+		System.out.println("write to output folder");
 	}
 
 }

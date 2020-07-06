@@ -88,29 +88,33 @@ public class Bicycle {
 	}
 
 	public Double getPrice() {
-		
-		Double totalPrice = Double.valueOf(0);
-		
-		if(null!=this.wheel) {
-			totalPrice = totalPrice + wheel.getPrice();
-		}
-		if(null!=this.frame) {
-			totalPrice = totalPrice + frame.getPrice();
-		}
-		if(null!=this.handle) {
-			totalPrice = totalPrice + handle.getPrice();
-		}
-		if(null!=this.seat) {
-			totalPrice = totalPrice + seat.getPrice();
-		}
-		if(null!=this.chainAssembly) {
-			totalPrice = totalPrice + chainAssembly.getPrice();
-		}
-		return totalPrice;
+		return price;
 	}
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+
+	public void calculatePrice() {
+		
+	price = Double.valueOf(0);
+		
+		if(null!=this.wheel) {
+			price = price + wheel.getPrice();
+		}
+		if(null!=this.frame) {
+			price = price + frame.getPrice();
+		}
+		if(null!=this.handle) {
+			price = price + handle.getPrice();
+		}
+		if(null!=this.seat) {
+			price = price + seat.getPrice();
+		}
+		if(null!=this.chainAssembly) {
+			price = price + chainAssembly.getPrice();
+		}
+		setPrice(price);
 	}
 	
 	

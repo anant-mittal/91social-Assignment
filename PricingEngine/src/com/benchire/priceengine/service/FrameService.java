@@ -30,7 +30,6 @@ public class FrameService {
 
 	public void calculatePrice() {
 		double spokePrice = frameDAO.getFramePrice(frame.getType(), date);
-		System.out.println(" frame type price : " + spokePrice);
 		double totalPrice = spokePrice;
 		frame.setPrice(totalPrice);
 	}

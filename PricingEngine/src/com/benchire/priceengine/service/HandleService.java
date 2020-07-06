@@ -30,10 +30,8 @@ public class HandleService {
 
 	public void calculatePrice() {
 		double spokePrice = handleDAO.getHandlePrice(handle.getType(), date);
-		System.out.println(" handle type price : " + spokePrice);
 
 		double shockLockPrice = handleDAO.getShocklockPrice(handle.isShockLock(), date);
-		System.out.println(" handle shockLockPrice : " + shockLockPrice);
 		double totalPrice = spokePrice + shockLockPrice;
 		handle.setPrice(totalPrice);
 	}

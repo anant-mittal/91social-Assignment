@@ -25,39 +25,18 @@ public class WheelService {
 	}
 
 	public double getPrice() {
-
-		double spokePrice = wheelDAO.getSpokePrice(wheel.getSpoke(), date);
-		System.out.println(" spoke price : " + spokePrice);
-
-		double rimPrice = wheelDAO.getRimPrice(wheel.getRim(), date);
-		System.out.println(" rim price : " + rimPrice);
-
-		double tubePrice = wheelDAO.getTubePrice(wheel.getRim(), date);
-		System.out.println(" tube price : " + tubePrice);
-
-		double tyrePrice = wheelDAO.getTyrePrice(wheel.getRim(), date);
-		System.out.println(" tyre price : " + tyrePrice);
-
-		double totalPrice = spokePrice + rimPrice + tubePrice + tyrePrice;
-
-		wheel.setPrice(totalPrice);
-
-		return totalPrice;
+		return wheel.getPrice(); 
 	}
 
 	public void calculatePrice() {
 
 		double spokePrice = wheelDAO.getSpokePrice(wheel.getSpoke(), date);
-		System.out.println(" spoke price : " + spokePrice);
 
 		double rimPrice = wheelDAO.getRimPrice(wheel.getRim(), date);
-		System.out.println(" rim price : " + rimPrice);
 
 		double tubePrice = wheelDAO.getTubePrice(wheel.getRim(), date);
-		System.out.println(" tube price : " + tubePrice);
 
 		double tyrePrice = wheelDAO.getTyrePrice(wheel.getRim(), date);
-		System.out.println(" tyre price : " + tyrePrice);
 
 		double totalPrice = spokePrice + rimPrice + tubePrice + tyrePrice;
 
