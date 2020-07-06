@@ -34,6 +34,9 @@ public class PricingEngine {
 
 		ExecutorService service = Executors.newFixedThreadPool(10);
 
+		
+		try {
+		
 		for (int i = 0; i < enquiry.length(); i++) {
 
 			try {
@@ -60,6 +63,8 @@ public class PricingEngine {
 			
 				
 			
+		}}catch (Exception e) {
+			e.printStackTrace();
 		}
 		
 		service.shutdown();
