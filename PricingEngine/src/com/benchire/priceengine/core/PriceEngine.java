@@ -10,7 +10,7 @@ import com.benchire.priceengine.frame.Diamond;
 import com.benchire.priceengine.frame.Frame;
 
 /**
- * @author Apple
+ * @author Nijesh
  *
  */
 public class PriceEngine extends AbstractFrame {
