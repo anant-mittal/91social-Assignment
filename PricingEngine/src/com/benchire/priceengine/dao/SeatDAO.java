@@ -9,7 +9,7 @@ import java.util.TreeMap;
 import com.benchire.priceengine.enums.SeatType;
 
 /**
- * @author Apple
+ * @author Nijesh
  *
  */
 public class SeatDAO {
